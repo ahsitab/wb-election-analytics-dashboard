@@ -1,0 +1,42 @@
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-panel backdrop-blur-md border border-slate-700/50 shadow-xl;
+  }
+}
+
+body {
+  @apply bg-background text-slate-100 antialiased overflow-hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 1);
+}
+
+/* Map specific tweaks */
+.leaflet-container {
+  background: transparent !important;
+}
+.leaflet-tooltip {
+  @apply bg-slate-800 text-slate-100 border border-slate-600 rounded-md shadow-lg !important;
+}
+.leaflet-tooltip-top:before {
+  border-top-color: theme('colors.slate.600') !important;
+}
