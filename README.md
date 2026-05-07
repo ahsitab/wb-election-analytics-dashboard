@@ -1,6 +1,8 @@
 # 🗳️ West Bengal Election Analytics Dashboard
 
-![Dashboard Preview](https://img.shields.io/badge/Status-Active-brightgreen) ![Tech Stack](https://img.shields.io/badge/Tech-React%20%7C%20FastAPI%20%7C%20Leaflet%20%7C%20ML-blue)
+![Tech Stack](https://img.shields.io/badge/Tech-React%20%7C%20FastAPI%20%7C%20Leaflet%20%7C%20ML-blue)
+
+![Dashboard UI Preview](frontend/public/dashboard_demo.png)
 
 A high-fidelity Election Intelligence Platform that visualizes constituency-level behavior, party dominance, and predictive political analytics for West Bengal.
 
